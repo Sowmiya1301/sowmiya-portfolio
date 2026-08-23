@@ -9,7 +9,8 @@ function Hero() {
         {/* left */}
         <p className="text-primary font-semibold text-lg mb-2 ">Hello, I'm</p>
         <h1 className="text-5xl md:text-6xl hero-font font-extrabold text-primary-dark leading-tight">
-          Sowmiya Uthayakumar
+          Sowmiya <br />
+          Uthayakumar
         </h1>
         <p className="mt-4 w-fit flex items-center gap-2 bg-primary/10 text-primary-dark border border-primary/20 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
           <span className=" shrink-0 rounded-full bg-primary animate-pulse"></span>
