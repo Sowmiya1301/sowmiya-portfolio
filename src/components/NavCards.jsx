@@ -34,7 +34,7 @@ const NavItems = [
 
 function NavCards() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-6 md:px-44 pb-4">
+    <div className="grid grid-cols-2 full-font md:grid-cols-4 gap-4 px-6 md:px-44 pb-4">
       {NavItems.map((item) => (
         <div
           key={item.title}
