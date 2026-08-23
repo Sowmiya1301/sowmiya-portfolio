@@ -5,7 +5,7 @@
 
 @theme {
   /* buttons, active states, icon backgrounds */
-  --color-primary: #4fc3e8;
+  --color-primary: #38bdf8;
   /* headings, the footer */
   --color-primary-dark: #0b2a4a;
   /* light background tint behind the whole hero */
@@ -22,10 +22,12 @@ body {
 
 .logo-font {
   font-family: "Allura", cursive;
+  font-weight: 600;
 }
 
-.hero-font{
+.hero-font {
   font-family: "Pacifico", cursive;
+  font-weight: 400;
 }
 
 .full-font {

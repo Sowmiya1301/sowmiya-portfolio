@@ -5,10 +5,10 @@ import { FiArrowRight, FiDownload } from "react-icons/fi";
 function Hero() {
   return (
     <section className="relative flex-1 flex flex-col md:flex-row items-center md:items-stretch overflow-hidden">
-      <div className="flex-1 flex flex-col full-font justify-center pl-8 md:pl-24 pr-8 md:pr-12">
+      <div className="flex-1 flex flex-col full-font justify-center pl-8 md:pl-35 pr-8 md:pr-12">
         {/* left */}
         <p className="text-primary font-semibold text-lg mb-2 ">Hello, I'm</p>
-        <h1 className="text-5xl md:text-6xl hero-font font-extrabold text-primary-dark leading-tight">
+        <h1 className="text-7xl md:text-6xl hero-font font-extrabold text-primary-dark leading-tight">
           Sowmiya <br />
           Uthayakumar
         </h1>
@@ -32,11 +32,11 @@ function Hero() {
         </div>
       </div>
 
-      <div className="flex-1 ">
+      <div className="flex-1 flex justify-end">
         <img
           src={sowmi}
           alt="image of developer"
-          className="w-[744px] h-[624px] object-cover object-[50%_20%] md:rounded-l-[3rem] "
+          className="w-full h-full max-w-[744px] object-contain object-right"
         />
       </div>
     </section>

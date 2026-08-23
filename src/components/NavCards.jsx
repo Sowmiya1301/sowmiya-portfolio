@@ -16,7 +16,7 @@ const NavItems = [
     image: SkillsImg,
     title: "Skills",
     desc: "Technologies and tools I work with.",
-    color: "bg-green-100",
+    color: "bg-blue-100",
   },
   {
     image: ProjectsImg,
@@ -38,7 +38,7 @@ function NavCards() {
       {NavItems.map((item) => (
         <div
           key={item.title}
-          className="relative bg-surface rounded-2xl p-4 border border-primary/20 
+          className="relative bg-white rounded-2xl p-4 
                      shadow-sm hover:shadow-md
                      transition-all duration-300
                      hover:-translate-y-1 cursor-pointer"
