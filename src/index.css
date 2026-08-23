@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* buttons, active states, icon backgrounds */
+  --color-primary: #4fc3e8;
+  /* headings, the footer */
+  --color-primary-dark: #0b2a4a;
+  /* light background tint behind the whole hero */
+  --color-surface: #eaf7fc;
+  /* paragraph text */
+  --color-body: #5a6b7a;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo-font {
+  font-family: "Allura", cursive;
+}
+
+.hero-font {
+  font-family: "Black Ops One", system-ui;
+}
