@@ -28,7 +28,7 @@ const NavItems = [
     image: ContactImg,
     title: "Contact",
     desc: "Let's connect and build something amazing.",
-    color: "bg-gray-200",
+    color: "bg-pink-100",
   },
 ];
 
