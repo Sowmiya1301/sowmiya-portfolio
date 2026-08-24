@@ -28,7 +28,7 @@ const NavItems = [
     image: ContactImg,
     title: "Contact",
     desc: "Let's connect and build something amazing.",
-    color: "bg-pink-100",
+    color: "bg-gray-200",
   },
 ];
 
@@ -40,7 +40,7 @@ function NavCards() {
           key={item.title}
           className="relative bg-white rounded-2xl p-4 
                      shadow-sm hover:shadow-md
-                     transition-all duration-300
+                     transition-all duration-300 w-65 h-25
                      hover:-translate-y-1 cursor-pointer"
         >
           <div className="flex items-start gap-3">

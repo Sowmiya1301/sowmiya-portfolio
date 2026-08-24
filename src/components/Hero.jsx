@@ -12,9 +12,8 @@ function Hero() {
           Sowmiya <br />
           Uthayakumar
         </h1>
-        <p className="mt-4 w-fit flex items-center gap-2 bg-primary/10 text-primary-dark border border-primary/20 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
-          <span className=" shrink-0 rounded-full bg-primary animate-pulse"></span>
-          Software Engineer
+        <p className="mt-4 w-fit  items-center bg-primary/10 text-primary-dark border border-primary/20 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
+          Web Developer
         </p>
         <p className="mt-6 text-body max-w-md">
           I build modern, responsive and user-friendly websites that help brands
