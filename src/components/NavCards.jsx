@@ -1,9 +1,9 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
-import AboutImg from "../assets/about-img.png";
-import SkillsImg from "../assets/skills-img.png";
-import ProjectsImg from "../assets/projects-img.png";
-import ContactImg from "../assets/contact-img.png";
+import AboutImg from "../assets/about-icon.png";
+import SkillsImg from "../assets/skills-icon.png";
+import ProjectsImg from "../assets/project-icon.png";
+import ContactImg from "../assets/contact-icon.png";
 
 const NavItems = [
   {
@@ -52,7 +52,7 @@ function NavCards() {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover"
+                className="w-9 h-9 object-cover"
               />
             </div>
 
