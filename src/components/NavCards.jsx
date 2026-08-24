@@ -38,27 +38,29 @@ function NavCards() {
       {NavItems.map((item) => (
         <div
           key={item.title}
-          className="relative bg-white rounded-2xl p-4 
+          className="relative bg-white rounded-2xl p-4 md:p-5 
                      shadow-sm hover:shadow-md
                      transition-all duration-300 w-65 h-25
                      hover:-translate-y-1 cursor-pointer"
         >
-          <div className="flex items-start gap-3">
+          <div className="flex items-start gap-3 md:gap-4">
             {/* Image */}
             <div
-              className={`w-16 h-16 shrink-0 rounded-full ${item.color} 
+              className={`w-12 h-12 md:w-16 md:h-16 shrink-0 rounded-full ${item.color} 
                           flex items-center justify-center overflow-hidden`}
             >
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-9 h-9 object-cover"
+                className="w-7 h-7 md:w-9 md:h-9 object-cover"
               />
             </div>
 
             {/* Text */}
             <div className="flex-1">
-              <h3 className="font-semibold text-primary-dark">{item.title}</h3>
+              <h3 className="text-sm md:text-base font-semibold text-primary-dark">
+                {item.title}
+              </h3>
 
               <p className="text-xs text-body mt-1 leading-relaxed">
                 {item.desc}
@@ -67,8 +69,9 @@ function NavCards() {
           </div>
 
           {/* Arrow */}
-          <div className="absolute right-4 bottom-3 text-primary">
-            <FiArrowRight size={18} />
+          <div className="absolute right-3 md:right-4 bottom-2 text-primary">
+            <FiArrowRight size={18} className="md:hidden" />
+            <FiArrowRight size={18} className="hidden md:inline" />
           </div>
         </div>
       ))}

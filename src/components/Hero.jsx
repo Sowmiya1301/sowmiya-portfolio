@@ -1,45 +1,45 @@
-import React from "react";
 import sowmi from "../assets/sowmi-img.png";
 import { FiArrowRight, FiDownload } from "react-icons/fi";
 
 function Hero() {
   return (
     <section className="relative flex-1 flex flex-col md:flex-row items-center md:items-stretch overflow-hidden">
-      <div className="flex-1 flex flex-col full-font justify-center pl-8 md:pl-35 pr-8 md:pr-12">
-        {/* left */}
-        <p className="text-primary font-semibold text-lg mb-2 ">Hello, I'm</p>
-        <h1 className="text-7xl md:text-6xl hero-font font-extrabold text-primary-dark leading-tight">
-          Sowmiya <br />
+      <div className="flex-1 flex flex-col full-font justify-center pl-6 sm:pl-8 md:pl-32 pr-6 sm:pr-8 md:pr-12">
+        <p className="text-primary font-semibold text-base md:text-lg mb-2">
+          Hello, I'm
+        </p>
+
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl hero-font font-extrabold text-primary-dark leading-tight">
+          Sowmiya <br className="hidden md:block" />
           Uthayakumar
         </h1>
-        {/* <p className="mt-4 w-fit  items-center bg-primary/10 text-primary-dark border border-primary/20 px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
-          Web Developer
-        </p> */}
-        <p className="mt-6 text-body max-w-md">
+
+        <p className="mt-4 md:mt-6 text-sm md:text-base text-body max-w-md">
           I build modern, responsive and user-friendly websites that help brands
           grow and make an impact.
         </p>
-        <div className="flex mt-8 gap-4">
-          <button className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-primary-dark transition-colors">
+
+        <div className="flex flex-wrap mt-6 md:mt-8 gap-4">
+          <button className="flex items-center gap-2 bg-primary text-white px-5 md:px-6 py-2.5 md:py-3 text-sm md:text-base rounded-full font-medium hover:bg-primary-dark transition-colors">
             View My Work
-            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#7DD3FC] text-primary-dark">
-              <FiArrowRight size={18} />
+            <span className="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-[#7DD3FC] text-surface">
+              <FiArrowRight size={16} />
             </span>
           </button>
-          <button className="flex items-center gap-2 border border-primary-dark text-primary-dark px-6 py-3 rounded-full font-medium hover:bg-primary-dark hover:text-white transition-colors">
+          <button className="flex items-center gap-2 border border-primary-dark text-primary-dark px-5 md:px-6 py-2.5 md:py-3 text-sm md:text-base rounded-full font-medium hover:bg-primary-dark hover:text-white transition-colors">
             Download CV
-            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#F3F6FA] text-primary-dark">
-              <FiDownload size={18} />
+            <span className="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-[#F3F6FA] text-primary-dark">
+              <FiDownload size={16} />
             </span>
           </button>
         </div>
       </div>
 
-      <div className="flex-1 flex justify-end">
+      <div className="w-full h-64 sm:h-80 md:h-auto md:flex-1 flex justify-center md:justify-end">
         <img
           src={sowmi}
           alt="image of developer"
-          className="w-full h-full max-w-[744px] object-contain object-right"
+          className="w-full h-full max-w-full md:w-full md:max-w-[744px] object-contain object-right md:object-right"
         />
       </div>
     </section>
