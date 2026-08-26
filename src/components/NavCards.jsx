@@ -9,34 +9,51 @@ const NavItems = [
   {
     image: AboutImg,
     title: "About Me",
-    desc: "Get to know me better and my journey.",
+    desc: (
+      <>
+        Get to know me better and
+        <br /> my journey.
+      </>
+    ),
   },
   {
     image: SkillsImg,
     title: "Skills",
-    desc: "Technologies and tools I work with.",
+    desc: (
+      <>
+        Technologies and tools <br /> I work with.
+      </>
+    ),
   },
   {
     image: ProjectsImg,
     title: "Projects",
-    desc: "Explore my latest work and case studies.",
+    desc: (
+      <>
+        Explore my latest work and <br /> case studies.
+      </>
+    ),
   },
   {
     image: ContactImg,
     title: "Contact",
-    desc: "Let's connect and build something amazing.",
+    desc: (
+      <>
+        Let's connect and build <br /> something amazing.
+      </>
+    ),
   },
 ];
 
 function NavCards() {
   return (
-    <div className="grid grid-cols-2 full-font md:grid-cols-4 gap-4 px-6 md:px-26 pb-4">
+    <div className="grid grid-cols-2 full-font md:grid-cols-4 gap-4 px-6 md:px-32 pb-4">
       {NavItems.map((item) => (
         <div
           key={item.title}
           className="relative bg-white rounded-2xl p-4 md:p-5 
                      shadow-sm hover:shadow-md
-                     transition-all duration-300 w-70 h-30
+                     transition-all duration-300 w-75 h-30
                      hover:-translate-y-1 cursor-pointer"
         >
           <div className="flex items-start gap-3 md:gap-4">
