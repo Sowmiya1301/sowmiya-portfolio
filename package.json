@@ -1,6 +1,7 @@
 {
   "name": "sowmiya-portfolio",
   "private": true,
+  "homepage": "https://sowmiya1301.github.io/sowmiya-portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +10,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

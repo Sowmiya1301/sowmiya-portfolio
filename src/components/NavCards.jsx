@@ -34,13 +34,13 @@ const NavItems = [
 
 function NavCards() {
   return (
-    <div className="grid grid-cols-2 full-font md:grid-cols-4 gap-4 px-6 md:px-44 pb-4">
+    <div className="grid grid-cols-2 full-font md:grid-cols-4 gap-4 px-6 md:px-26 pb-4">
       {NavItems.map((item) => (
         <div
           key={item.title}
           className="relative bg-white rounded-2xl p-4 md:p-5 
                      shadow-sm hover:shadow-md
-                     transition-all duration-300 w-65 h-25
+                     transition-all duration-300 w-70 h-30
                      hover:-translate-y-1 cursor-pointer"
         >
           <div className="flex items-start gap-3 md:gap-4">

@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FiHome, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 function Social() {
-  const [active, setActive] = useState("home");
-
   const links = [
     {
       id: "home",
@@ -27,27 +25,6 @@ function Social() {
     },
   ];
 
-  useEffect(() => {
-    const handlePageShow = () => {
-      setActive("home");
-      localStorage.setItem("activeSocial", "home");
-    };
-
-    window.addEventListener("pageshow", handlePageShow);
-
-    return () => {
-      window.removeEventListener("pageshow", handlePageShow);
-    };
-  }, []);
-
-  const handleClick = (id) => {
-    setActive(id);
-
-    if (id === "home") {
-      localStorage.setItem("activeSocial", "home");
-    }
-  };
-
   return (
     <div className="hidden md:flex fixed left-8 top-1/2 -translate-y-1/2 z-50">
       <div className="flex flex-col items-center gap-4 p-2.5 bg-white border border-gray-200 rounded-full shadow-md">
@@ -55,19 +32,17 @@ function Social() {
           <a
             key={link.id}
             href={link.href}
-            onClick={() => handleClick(link.id)}
+            target={link.id === "home" ? "_self" : "_blank"}
+            rel={link.id === "home" ? undefined : "noopener noreferrer"}
             aria-label={link.id}
-            className={`
+            className="
               flex items-center justify-center
               w-9 h-9
               rounded-full
-              transition-all duration-200
-              ${
-                active === link.id
-                  ? "bg-sky-400 text-white shadow-sm"
-                  : "bg-slate-50 text-slate-800 hover:bg-sky-50 hover:text-sky-500"
-              }
-            `}
+              text-slate-800
+              hover:text-sky-500
+              transition-colors duration-200
+            "
           >
             {link.icon}
           </a>
