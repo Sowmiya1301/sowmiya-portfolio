@@ -10,25 +10,21 @@ const NavItems = [
     image: AboutImg,
     title: "About Me",
     desc: "Get to know me better and my journey.",
-    color: "bg-purple-100",
   },
   {
     image: SkillsImg,
     title: "Skills",
     desc: "Technologies and tools I work with.",
-    color: "bg-blue-100",
   },
   {
     image: ProjectsImg,
     title: "Projects",
     desc: "Explore my latest work and case studies.",
-    color: "bg-yellow-100",
   },
   {
     image: ContactImg,
     title: "Contact",
     desc: "Let's connect and build something amazing.",
-    color: "bg-pink-100",
   },
 ];
 
@@ -46,7 +42,7 @@ function NavCards() {
           <div className="flex items-start gap-3 md:gap-4">
             {/* Image */}
             <div
-              className={`w-12 h-12 md:w-16 md:h-16 shrink-0 rounded-full ${item.color} 
+              className={`w-12 h-12 md:w-16 md:h-16 shrink-0 rounded-full bg-surface 
                           flex items-center justify-center overflow-hidden`}
             >
               <img

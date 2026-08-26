@@ -20,7 +20,7 @@ function Hero() {
         </p>
 
         <div className="flex flex-wrap mt-6 md:mt-8 gap-4">
-          <button className="group flex items-center gap-2 bg-primary text-white px-5 md:px-6 py-2.5 md:py-3 text-sm md:text-base rounded-full font-medium hover:bg-primary-dark transition-colors">
+          <button className="group flex items-center gap-4 bg-primary text-white px-4 md:px-6 py-2.5 md:py-3 text-sm md:text-base rounded-full font-medium hover:bg-primary-dark transition-colors">
             See My Work
             <span className="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-[#7DD3FC] text-surface group-hover:bg-[#0C4A6E] group-hover:text-white transition-colors">
               <FiArrowRight size={16} />
