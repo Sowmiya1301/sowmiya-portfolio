@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import AboutImg from "../assets/about-icon.png";
 import SkillsImg from "../assets/skills-icon.png";
@@ -9,6 +10,7 @@ const NavItems = [
   {
     image: AboutImg,
     title: "About Me",
+    path: "/about",
     desc: (
       <>
         Get to know me better and
@@ -19,6 +21,7 @@ const NavItems = [
   {
     image: SkillsImg,
     title: "Skills",
+    path: "/skills",
     desc: (
       <>
         Technologies and tools <br /> I work with.
@@ -28,6 +31,7 @@ const NavItems = [
   {
     image: ProjectsImg,
     title: "Projects",
+    path: "/projects",
     desc: (
       <>
         Explore my latest work and <br /> case studies.
@@ -37,6 +41,7 @@ const NavItems = [
   {
     image: ContactImg,
     title: "Contact",
+    path: "/contact",
     desc: (
       <>
         Let's connect and build <br /> something amazing.
@@ -46,11 +51,13 @@ const NavItems = [
 ];
 
 function NavCards() {
+  const navigate = useNavigate();
   return (
     <div className="grid grid-cols-2 full-font md:grid-cols-4 gap-4 px-6 md:px-32 pb-4">
       {NavItems.map((item) => (
         <div
           key={item.title}
+          onClick={() => navigate(item.path)}
           className="relative bg-white rounded-2xl p-4 md:p-5 
                      shadow-sm hover:shadow-md
                      transition-all duration-300 w-75 h-30

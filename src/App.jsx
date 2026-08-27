@@ -1,16 +1,19 @@
-import Hero from "./components/Hero";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Navbar from "./components/Navbar";
-import NavCards from "./components/NavCards";
 import Social from "./components/Social";
 
 function App() {
   return (
-    <div className="h-screen flex flex-col bg-surface overflow-hidden gap-4">
+    <>
       <Navbar />
-      <Hero />
       <Social />
-      <NavCards />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </>
   );
 }
 
