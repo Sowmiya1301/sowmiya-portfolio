@@ -1,5 +1,5 @@
 import AboutIntro from "../components/AboutIntro";
-import { IoIosHeartEmpty } from "react-icons/io";
+import { RiUserHeartLine } from "react-icons/ri";
 
 function About() {
   return (
@@ -8,7 +8,7 @@ function About() {
         <span>
           <span className="text-primary ">About </span> Me
         </span>
-        <IoIosHeartEmpty className="text-primary text-xl md:text-2xl" />
+        <RiUserHeartLine className="text-primary-dark text-2xl md:text-3xl" />
       </h1>
 
       {/* About Intro */}
