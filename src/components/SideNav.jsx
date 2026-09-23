@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiHome, FiUser, FiCode, FiBriefcase, FiMail } from "react-icons/fi";
 
 function SideNav() {
+  const [activeLink, setActiveLink] = useState("home");
+
   const links = [
     {
       id: "home",
@@ -44,15 +46,18 @@ function SideNav() {
             href={link.href}
             aria-label={link.label}
             title={link.label}
-            className="
+            onClick={() => setActiveLink(link.id)}
+            className={`
               flex items-center justify-center
               w-9 h-9
               rounded-full
-              text-slate-800
-              hover:text-sky-500
-              hover:bg-sky-50
               transition-all duration-200
-            "
+              ${
+                activeLink === link.id
+                  ? "text-sky-500 bg-sky-50"
+                  : "text-slate-800 hover:text-sky-500 hover:bg-sky-50"
+              }
+            `}
           >
             {link.icon}
           </a>
