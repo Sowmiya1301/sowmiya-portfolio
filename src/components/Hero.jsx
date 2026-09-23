@@ -1,5 +1,6 @@
 import sowmi from "../assets/sowmi-img.png";
 import { FiArrowRight, FiDownload } from "react-icons/fi";
+import Social from "./Social";
 
 function Hero() {
   return (
@@ -34,6 +35,8 @@ function Hero() {
             </span>
           </button>
         </div>
+
+        <Social />
       </div>
 
       <div className="w-full h-64 sm:h-80 md:h-auto md:flex-1 flex justify-center md:justify-end">

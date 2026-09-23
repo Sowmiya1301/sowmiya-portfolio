@@ -17,7 +17,7 @@ const stats = [
   {
     icon: PiGraduationCap,
     label: "Education",
-    value: "BSc Software Eng.",
+    value: "BSE Software Eng.",
   },
   {
     icon: FiHeart,
