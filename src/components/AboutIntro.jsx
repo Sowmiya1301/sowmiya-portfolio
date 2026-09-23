@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import aboutimg from "../assets/about-img.png";
 import { FiMapPin, FiHeart, FiBriefcase } from "react-icons/fi";
 import { PiGraduationCap } from "react-icons/pi";
@@ -39,10 +42,19 @@ const experience = {
 };
 
 function AboutIntro() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-      {/* LEFT */}
-      <div className="lg:col-span-6 flex flex-col gap-4">
+      <div
+        className="lg:col-span-6 flex flex-col gap-4"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         {/* Image */}
         <div className="w-full h-[360px] md:h-[440px] rounded-3xl overflow-hidden bg-primary/15 flex items-end justify-center">
           <img
@@ -52,7 +64,7 @@ function AboutIntro() {
           />
         </div>
 
-        {/* note */}
+        {/* para */}
         <div className="bg-primary/10 border border-primary/20 rounded-2xl px-6 py-5">
           <p className="text-primary-dark  text-sm md:text-base italic leading-relaxed">
             "I love turning ideas into clean, functional and user-friendly
@@ -62,8 +74,11 @@ function AboutIntro() {
       </div>
 
       {/* RIGHT */}
-      <div className="lg:col-span-6">
-        {/* Intro */}
+      <div
+        className="lg:col-span-6"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h1 className="text-3xl md:text-4xl font-bold text-primary-dark">
           Hi, I'm Sowmiya
         </h1>
@@ -101,7 +116,11 @@ function AboutIntro() {
         </div>
 
         {/* EDUCATION and EXPERIENCE */}
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div
+          className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           {/* Education */}
           <div className="bg-white border border-primary/10 rounded-2xl p-5 shadow-sm">
             <div className="flex items-center gap-2 mb-4">
