@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import About from "./About";
+import Skills from "./Skills";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <Hero />
       </section>
       <About />
+      <Skills />
     </div>
   );
 }

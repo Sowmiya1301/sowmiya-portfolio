@@ -4,13 +4,13 @@ import { useEffect } from "react";
 import aboutimg from "../assets/about-img.png";
 import { FiMapPin, FiHeart, FiBriefcase } from "react-icons/fi";
 import { PiGraduationCap } from "react-icons/pi";
-import { HiOutlineCake } from "react-icons/hi";
+import { GoGoal } from "react-icons/go";
 
 const stats = [
   {
-    icon: HiOutlineCake,
-    label: "Age",
-    value: "26",
+    icon: GoGoal,
+    label: "Focus",
+    value: "Web Development",
   },
   {
     icon: FiMapPin,
@@ -45,9 +45,14 @@ function AboutIntro() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false,
+      once: true,
+      offset: 100,
+      easing: "ease-out",
     });
+
+    AOS.refresh();
   }, []);
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
       <div
@@ -64,9 +69,9 @@ function AboutIntro() {
           />
         </div>
 
-        {/* para */}
+        {/* Quote */}
         <div className="bg-primary/10 border border-primary/20 rounded-2xl px-6 py-5">
-          <p className="text-primary-dark  text-sm md:text-base italic leading-relaxed">
+          <p className="text-primary-dark text-sm md:text-base italic leading-relaxed">
             "I love turning ideas into clean, functional and user-friendly
             digital experiences."
           </p>
@@ -97,7 +102,7 @@ function AboutIntro() {
             return (
               <div
                 key={stat.label}
-                className="min-h-[76px] flex items-center gap-3 bg-surface border border-primary/20 rounded-xl px-4 py-3"
+                className="min-h-[76px] flex items-center gap-3 bg-white border border-primary/20 rounded-xl px-4 py-3"
               >
                 <span className="w-10 h-10 shrink-0 rounded-full bg-primary/15 flex items-center justify-center text-primary-dark">
                   <Icon size={17} />
@@ -115,7 +120,7 @@ function AboutIntro() {
           })}
         </div>
 
-        {/* EDUCATION and EXPERIENCE */}
+        {/* Education & Experience */}
         <div
           className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4"
           data-aos="fade-up"
