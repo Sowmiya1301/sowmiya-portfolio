@@ -1,4 +1,6 @@
 // import sowmi from "../assets/sowmi-img.png";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 import {
   FiZap,
@@ -15,10 +17,9 @@ import {
 
 import {
   SiHtml5,
-  SiCss,
   SiJavascript,
   SiReact,
-  SiGit,
+  SiGithub,
   SiFigma,
   SiPostman,
   SiNetlify,
@@ -39,7 +40,7 @@ const skillCategories = [
       },
       {
         name: "CSS",
-        icon: SiCss,
+        icon: FaCss3Alt,
         color: "#264DE4",
       },
       {
@@ -54,8 +55,8 @@ const skillCategories = [
       },
       {
         name: "Git & GitHub",
-        icon: SiGit,
-        color: "#F05032",
+        icon: SiGithub,
+        color: "#24292E",
       },
     ],
   },
@@ -72,7 +73,7 @@ const skillCategories = [
       {
         name: "Figma",
         icon: SiFigma,
-        color: "#A259FF",
+        color: "#F24E1E",
       },
       {
         name: "Postman",
@@ -235,8 +236,8 @@ function SkillsIntro() {
                         gap-2
                         px-4
                         py-2
-                        rounded-full
-                        bg-primary/10
+                        rounded-lg
+                        bg-white
                         border
                         border-primary/20
                         text-primary-dark
