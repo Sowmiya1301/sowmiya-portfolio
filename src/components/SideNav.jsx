@@ -69,7 +69,7 @@ function SideNav() {
 
   return (
     <div className="hidden md:flex fixed left-8 top-1/2 -translate-y-1/2 z-50">
-      <div className="flex flex-col items-center gap-1.5 p-1.5 rounded-full bg-surface/90 backdrop-blur-md border border-primary-dark/10 shadow-sm">
+      <div className="flex flex-col items-center gap-1.5 p-1.5 rounded-full bg-white backdrop-blur-md border border-primary-dark/10 shadow-sm">
         {links.map((link) => {
           const isActive = activeLink === link.id;
 

@@ -110,12 +110,12 @@ const skillCategories = [
         icon: FiUsers,
       },
       {
-        name: "Time Management",
-        icon: FiClock,
-      },
-      {
         name: "Adaptability",
         icon: FiRefreshCw,
+      },
+      {
+        name: "Time Management",
+        icon: FiClock,
       },
     ],
   },
@@ -212,7 +212,7 @@ function SkillsIntro() {
                         }}
                       />
 
-                      <span className="text-xs text-body leading-tight">
+                      <span className="text-sm text-body leading-tight">
                         {skill.name}
                       </span>
                     </div>
@@ -306,7 +306,7 @@ function SkillsIntro() {
 
                     {/* Card */}
                     <div className="bg-white rounded-xl px-4 py-3 flex-1">
-                      <p className="text-xs text-primary font-semibold">
+                      <p className="text-sm text-primary font-semibold">
                         {step.num}
                       </p>
 
@@ -314,7 +314,7 @@ function SkillsIntro() {
                         {step.title}
                       </h4>
 
-                      <p className="text-xs text-body mt-1">{step.desc}</p>
+                      <p className="text-sm text-body mt-1">{step.desc}</p>
                     </div>
                   </div>
                 );

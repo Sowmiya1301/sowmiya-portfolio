@@ -8,25 +8,25 @@ import { GoGoal } from "react-icons/go";
 
 const stats = [
   {
-    icon: GoGoal,
-    label: "Focus",
-    value: "Web Development",
+    icon: FiHeart,
+    label: "Availability",
+    value: "Open to work",
   },
   {
     icon: FiMapPin,
     label: "Location",
     value: "Sri Lanka",
   },
-  {
-    icon: PiGraduationCap,
-    label: "Education",
-    value: "BSE Software Eng.",
-  },
-  {
-    icon: FiHeart,
-    label: "Availability",
-    value: "Open to work",
-  },
+  // {
+  //   icon: PiGraduationCap,
+  //   label: "Education",
+  //   value: "BSE Software Eng.",
+  // },
+  // {
+  //   icon: FiHeart,
+  //   label: "Availability",
+  //   value: "Open to work",
+  // },
 ];
 
 const education = {
@@ -102,14 +102,14 @@ function AboutIntro() {
             return (
               <div
                 key={stat.label}
-                className="min-h-[76px] flex items-center gap-3 bg-white border border-primary/20 rounded-xl px-4 py-3"
+                className="min-h-[76px] flex items-center gap-3 text-sm bg-white border border-primary/20 rounded-xl px-4 py-3"
               >
                 <span className="w-10 h-10 shrink-0 rounded-full bg-primary/15 flex items-center justify-center text-primary-dark">
                   <Icon size={17} />
                 </span>
 
                 <div className="min-w-0">
-                  <p className="text-xs text-body">{stat.label}</p>
+                  <p className="text-sm text-body">{stat.label}</p>
 
                   <p className="text-sm font-semibold text-primary-dark truncate">
                     {stat.value}
@@ -142,9 +142,9 @@ function AboutIntro() {
               {education.degree}
             </h3>
 
-            <p className="text-xs text-body mt-2">{education.place}</p>
+            <p className="text-sm text-body mt-2">{education.place}</p>
 
-            <p className="text-xs text-body mt-1">{education.years}</p>
+            <p className="text-sm text-body mt-1">{education.years}</p>
           </div>
 
           {/* Experience */}
@@ -163,9 +163,9 @@ function AboutIntro() {
               {experience.role}
             </h3>
 
-            <p className="text-xs text-body mt-2">{experience.place}</p>
+            <p className="text-sm text-body mt-2">{experience.place}</p>
 
-            <p className="text-xs text-body mt-1">{experience.years}</p>
+            <p className="text-sm text-body mt-1">{experience.years}</p>
           </div>
         </div>
       </div>
