@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import aboutimg from "../assets/about-img.png";
 import { FiMapPin, FiHeart, FiBriefcase } from "react-icons/fi";
 import { PiGraduationCap } from "react-icons/pi";
-import { GoGoal } from "react-icons/go";
 
 const stats = [
   {
