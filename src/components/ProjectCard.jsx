@@ -3,7 +3,7 @@ import { FiGithub, FiExternalLink, FiBriefcase } from "react-icons/fi";
 function ProjectCard({ project }) {
   return (
     <div className="bg-white border full-font border-primary/10 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-      <div className="h-40 bg-primary/10 overflow-hidden flex items-center justify-center">
+      <div className="h-40 bg-white m-2 overflow-hidden flex items-center justify-center">
         {project.image ? (
           <img
             src={project.image}
