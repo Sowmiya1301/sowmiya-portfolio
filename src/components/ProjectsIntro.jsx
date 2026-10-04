@@ -1,22 +1,11 @@
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import FeaturedProjectCard from "./FeaturedProjectCard";
 import { FiGrid, FiUser, FiBookOpen, FiBriefcase } from "react-icons/fi";
 
 import leaferImg from "../assets/projects-img/leafer.jpeg";
 import medstarImg from "../assets/projects-img/MedStar.jpeg";
 import sweetestImg from "../assets/projects-img/the-sweetest.png";
 import pizzaImg from "../assets/projects-img/Pizza-website.png";
-// import moniestImg from "../assets/projects-img/moniest.png"; // add once you have a screenshot
-
-const featuredProject = {
-  title: "Moniest",
-  status: "In Progress",
-  desc: "A full-stack expense tracker built with the MERN stack — budgeting, categorized spending, and visual insights.",
-  image: undefined, // replace with moniestImg once imported above
-  tags: ["MongoDB", "Express", "React", "Node.js"],
-  githubUrl: "https://github.com/Sowmiya1301/moniest",
-};
 
 const allProjects = [
   {
@@ -144,31 +133,13 @@ function ProjectsIntro() {
         </div>
       </div>
 
-      {/* Bento: featured + one card beside it, only on "All Projects" */}
-      {activeTab === "all" && (
-        <div
-          className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6"
-          data-aos="fade-up"
-        >
-          <div className="lg:col-span-2">
-            <FeaturedProjectCard project={featuredProject} />
-          </div>
-          <div>
-            {visibleProjects[0] && <ProjectCard project={visibleProjects[0]} />}
-          </div>
-        </div>
-      )}
-
-      {/* Remaining projects in a normal grid */}
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         data-aos="fade-up"
       >
-        {(activeTab === "all" ? visibleProjects.slice(1) : visibleProjects).map(
-          (project) => (
-            <ProjectCard key={project.title} project={project} />
-          ),
-        )}
+        {visibleProjects.map((project) => (
+          <ProjectCard key={project.title} project={project} />
+        ))}
       </div>
     </div>
   );
