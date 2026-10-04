@@ -11,9 +11,7 @@ function Projects() {
           My <span className="text-primary "> Projects </span>
         </span>{" "}
       </h1>
-      <p className="text-sm md:text-base text-body max-w-lg mb-8 full-font">
-        A collection of work, academic, and personal projects I've built.
-      </p>
+
       <ProjectsIntro />
     </section>
   );
