@@ -44,21 +44,15 @@ function SideNav() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        const visibleSections = entries.filter((entry) => entry.isIntersecting);
-
-        if (visibleSections.length > 0) {
-          const currentSection = visibleSections.reduce((prev, current) => {
-            return current.intersectionRatio > prev.intersectionRatio
-              ? current
-              : prev;
-          });
-
-          setActiveLink(currentSection.target.id);
-        }
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveLink(entry.target.id);
+          }
+        });
       },
       {
-        threshold: [0.2, 0.4, 0.6, 0.8],
-        rootMargin: "-20% 0px -50% 0px",
+        threshold: 0,
+        rootMargin: "-45% 0px -45% 0px",
       },
     );
 
