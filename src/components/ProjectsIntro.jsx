@@ -14,10 +14,7 @@ const allProjects = [
     desc: "Developed a cake selling website with product listing, cart functionality, add favourites.",
     image: sweetestImg,
     tags: ["React", "Tailwind CSS", "JavaScript"],
-    contributions: [
-      "Developed product listing & cart features",
-      "Integrated state management & UI components",
-    ],
+
     liveUrl: "https://sowmiya1301.github.io/the-sweetest/",
     githubUrl: "https://github.com/Sowmiya1301/the-sweetest",
   },
@@ -27,10 +24,7 @@ const allProjects = [
     desc: "Developed reusable components for Home, Menu, About, and Contact page.",
     image: pizzaImg,
     tags: ["React", "CSS", "JavaScript"],
-    contributions: [
-      "Built reusable UI components",
-      "Implemented responsive layouts across pages",
-    ],
+
     liveUrl: "https://sowmiya1301.github.io/FlavorFusion-Pies-Website/",
     githubUrl: "https://github.com/Sowmiya1301/FlavorFusion-Pies-Website",
   },
@@ -40,10 +34,7 @@ const allProjects = [
     desc: "Banana leaf disease detection using deep learning and image processing. Flutter + Python backend.",
     image: leaferImg,
     tags: ["Flutter", "Python", "CNN (Inception V3)", "SQLite"],
-    contributions: [
-      "Built cure-stage monitoring & history screens",
-      "Trained models (InceptionV3, MobileNetV2)",
-    ],
+
     githubUrl: "https://github.com/vanathysam/leafer_app",
   },
   {

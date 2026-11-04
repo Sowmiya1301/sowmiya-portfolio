@@ -1,30 +1,34 @@
 import React from "react";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import UseAnimations from "react-useanimations";
+
+import github from "react-useanimations/lib/github";
+import linkedin from "react-useanimations/lib/linkedin";
+import mail from "react-useanimations/lib/mail";
 
 function Social() {
   const links = [
     {
       id: "github",
       href: "https://github.com/Sowmiya1301",
-      icon: <FiGithub size={22} />,
+      icon: github,
       label: "GitHub",
     },
     {
       id: "linkedin",
       href: "https://www.linkedin.com/in/sowmiya-uthayakumar",
-      icon: <FiLinkedin size={22} />,
+      icon: linkedin,
       label: "LinkedIn",
     },
     {
       id: "mail",
       href: "mailto:usowmiya00@gmail.com",
-      icon: <FiMail size={22} />,
+      icon: mail,
       label: "Email",
     },
   ];
 
   return (
-    <div className="flex items-center gap-4 py-1 px-3 mt-5">
+    <div className="flex items-center justify-center gap-7">
       {links.map((link) => (
         <a
           key={link.id}
@@ -33,14 +37,14 @@ function Social() {
           rel={link.id === "mail" ? undefined : "noopener noreferrer"}
           aria-label={link.label}
           title={link.label}
-          className="
-            text-primary-dark
-            hover:text-primary
-            transition-all duration-200
-            hover:-translate-y-1
-          "
+          className="flex h-8 w-8 items-center justify-center text-primary-dark transition-all duration-200 hover:-translate-y-1 hover:text-primary"
         >
-          {link.icon}
+          <UseAnimations
+            animation={link.icon}
+            size={26}
+            autoplay={false}
+            loop={false}
+          />
         </a>
       ))}
     </div>

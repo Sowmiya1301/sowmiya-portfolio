@@ -3,7 +3,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 function Navbar() {
   return (
-    <nav className=" top-0 z-40 flex justify-between items-center pl-6 sm:pl-8 md:pl-32 pr-6 sm:pr-8 md:pr-16 py-4 md:py-5 bg-surface">
+    <nav className="relative z-20 flex h-16 items-center justify-between bg-surface px-6 py-4 sm:px-8 md:h-20 md:px-32">
       <div className="flex items-center gap-1">
         <span className="text-xl sm:text-2xl md:text-3xl font-semibold text-primary-dark logo-font">
           Sowmiya

@@ -3,8 +3,8 @@ import { FiMail, FiPhone, FiLinkedin, FiMapPin } from "react-icons/fi";
 const contactInfo = [
   {
     icon: FiMail,
-    label: "usowmiya00@gmail.com",
-    href: "mailto:usowmiya00@gmail.com",
+    label: "sowmiya.uthayakmaar@gmail.com",
+    href: "mailto:sowmiya.uthayakmaar@gmail.com",
   },
   { icon: FiPhone, label: "+94 741601138" },
   {
