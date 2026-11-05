@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Home from "./pages/Home";
-import SideNav from "./components/SideNav";
-import Navbar from "./components/Navbar";
+import TopNav from "./components/TopNav";
+
 
 function App() {
   useEffect(() => {
@@ -17,8 +17,9 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <SideNav />
+    <TopNav />
+      {/* <Navbar />
+      <SideNav /> */}
       <Home />
     </>
   );

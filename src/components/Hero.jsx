@@ -21,7 +21,7 @@ function Hero() {
               Uthayakumar
             </h1>
 
-            <p className="mt-6 max-w-xl text-sm leading-8 sm:text-base">
+            <p className="mt-6 max-w-xl text-sm text-[#dfcdb2] leading-8 sm:text-base">
               I'm a Software Engineer passionate about building modern,
               responsive and user-friendly websites that help brands grow and
               make an impact.
@@ -32,10 +32,10 @@ function Hero() {
 
       {/* LAYER 2: social links and buttons. They sit OUTSIDE the blend so they
           keep their real colors. */}
-      <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col items-center gap-7 px-6 pb-16">
-        <div className="inline-flex items-center justify-center rounded-full border border-white/50 bg-white/70 px-7 py-4 shadow-sm backdrop-blur-xl">
+      <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col items-center gap-7 px-6 pb-30">
+        {/* <div className="inline-flex items-center justify-center rounded-full border border-white/50 bg-white/70 px-7 py-4 shadow-sm backdrop-blur-xl">
           <Social />
-        </div>
+        </div> */}
 
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
