@@ -1,6 +1,6 @@
 import { FiArrowRight, FiDownload } from "react-icons/fi";
-import Social from "./Social";
 import InkBlobCursor from "./InkBlobCursor";
+import OriginButton from "./OriginButton";
 
 function Hero() {
   return (
@@ -38,26 +38,32 @@ function Hero() {
         </div> */}
 
         <div className="flex flex-wrap items-center justify-center gap-4">
-          <a
+          <OriginButton
             href="#projects"
-            className="group flex items-center gap-3 rounded-full bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-dark"
+            className="bg-primary"
+            textClassName="text-white"
+            hoverTextClassName="text-primary-dark"
+            fillClassName="bg-white/70"
           >
             See My Work
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#7DD3FC] text-surface transition-colors group-hover:bg-[#0C4A6E] group-hover:text-white">
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/25 text-white transition-colors group-hover:bg-white group-hover:text-primary-dark">
               <FiArrowRight size={16} />
             </span>
-          </a>
+          </OriginButton>
 
-          <a
+          <OriginButton
             href={`${import.meta.env.BASE_URL}Sowmiya_Uthayakumar.pdf`}
             download="Sowmiya-Uthayakumar-Resume.pdf"
-            className="group flex items-center gap-3 rounded-full border border-primary-dark bg-white/70 px-6 py-3 text-sm font-medium text-primary-dark backdrop-blur transition-colors hover:bg-primary-dark hover:text-white"
+            className="border text-primary-dark "
+            textClassName="text-white"
+            hoverTextClassName="text-white"
+            fillClassName="bg-[#dfcdb2]"
           >
             View Resume
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#F3F6FA] text-primary-dark transition-colors group-hover:bg-[#0C4A6E] group-hover:text-white">
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/75 text-primary-dark ">
               <FiDownload size={16} />
             </span>
-          </a>
+          </OriginButton>
         </div>
       </div>
     </section>

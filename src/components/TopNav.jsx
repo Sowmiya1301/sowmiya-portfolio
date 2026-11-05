@@ -1,36 +1,26 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import {
-  FiHome,
-  FiUser,
-  FiCode,
-  FiBriefcase,
-  FiMail,
-  FiMenu,
-} from "react-icons/fi";
+import { FiMenu } from "react-icons/fi";
 
 // Same links as your old SideNav. Defined outside the component so the list is
 // created once, not on every render.
 const links = [
-  { id: "home", label: "Home", href: "#home", icon: <FiHome size={17} /> },
-  { id: "about", label: "About", href: "#about", icon: <FiUser size={17} /> },
+  { id: "home", label: "Home", href: "#home" },
+  { id: "about", label: "About", href: "#about" },
   {
     id: "skills",
     label: "Skills",
     href: "#skills",
-    icon: <FiCode size={17} />,
   },
   {
     id: "projects",
     label: "Projects",
     href: "#projects",
-    icon: <FiBriefcase size={17} />,
   },
   {
     id: "contact",
     label: "Contact",
     href: "#contact",
-    icon: <FiMail size={17} />,
   },
 ];
 
@@ -190,7 +180,12 @@ function TopNav() {
 
         {/* MENU ICON: only visible when collapsed */}
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-          <motion.div variants={menuIconVariants} className="text-primary-dark">
+          <motion.div
+            initial="expanded"
+            variants={menuIconVariants}
+            animate={isExpanded ? "expanded" : "collapsed"}
+            className="text-primary-dark"
+          >
             <FiMenu size={20} />
           </motion.div>
         </div>
