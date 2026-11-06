@@ -5,38 +5,27 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
-import {
-  FiHome,
-  FiUser,
-  FiCode,
-  FiBriefcase,
-  FiMail,
-  FiMenu,
-  FiX,
-} from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 // Same links as your old SideNav. Defined outside the component so the list is
 // created once, not on every render.
 const links = [
-  { id: "home", label: "Home", href: "#home", icon: <FiHome size={17} /> },
-  { id: "about", label: "About", href: "#about", icon: <FiUser size={17} /> },
+  { id: "home", label: "Home", href: "#home" },
+  { id: "about", label: "About", href: "#about" },
   {
     id: "skills",
     label: "Skills",
     href: "#skills",
-    icon: <FiCode size={17} />,
   },
   {
     id: "projects",
     label: "Projects",
     href: "#projects",
-    icon: <FiBriefcase size={17} />,
   },
   {
     id: "contact",
     label: "Contact",
     href: "#contact",
-    icon: <FiMail size={17} />,
   },
 ];
 
