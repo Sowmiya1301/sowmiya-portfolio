@@ -17,12 +17,16 @@ import {
 import {
   SiHtml5,
   SiJavascript,
+  SiTypescript,
   SiReact,
+  SiExpress,
+  SiNodedotjs,
+  SiMongodb,
+  SiFlutter,
+  SiTailwindcss,
   SiGithub,
   SiFigma,
   SiPostman,
-  SiNetlify,
-  SiGooglechrome,
 } from "react-icons/si";
 
 import { VscVscode } from "react-icons/vsc";
@@ -43,14 +47,44 @@ const skillCategories = [
         color: "#264DE4",
       },
       {
+        name: "Tailwind CSS",
+        icon: SiTailwindcss,
+        color: "#06B6D4",
+      },
+      {
         name: "JavaScript",
         icon: SiJavascript,
         color: "#F0DB4F",
       },
       {
+        name: "TypeScript",
+        icon: SiTypescript,
+        color: "#3178C6",
+      },
+      {
         name: "React.js",
         icon: SiReact,
         color: "#61DAFB",
+      },
+      {
+        name: "Node.js",
+        icon: SiNodedotjs,
+        color: "#339933",
+      },
+      {
+        name: "Express.js",
+        icon: SiExpress,
+        color: "#000000",
+      },
+      {
+        name: "MongoDB",
+        icon: SiMongodb,
+        color: "#47A248",
+      },
+      {
+        name: "Flutter",
+        icon: SiFlutter,
+        color: "#02569B",
       },
       {
         name: "Git & GitHub",
@@ -79,19 +113,8 @@ const skillCategories = [
         icon: SiPostman,
         color: "#FF6C37",
       },
-      {
-        name: "Netlify",
-        icon: SiNetlify,
-        color: "#00C7B7",
-      },
-      {
-        name: "Chrome DevTools",
-        icon: SiGooglechrome,
-        color: "#4285F4",
-      },
     ],
   },
-
   {
     title: "Soft Skills",
     type: "badges",

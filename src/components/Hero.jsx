@@ -37,7 +37,7 @@ function Hero() {
           <Social />
         </div> */}
 
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-6">
           <OriginButton
             href="#projects"
             className="bg-primary"
@@ -54,13 +54,13 @@ function Hero() {
           <OriginButton
             href={`${import.meta.env.BASE_URL}Sowmiya_Uthayakumar.pdf`}
             download="Sowmiya-Uthayakumar-Resume.pdf"
-            className="bg-primary-dark"
+            className="bg-primary"
             textClassName="text-white"
             hoverTextClassName="text-primary-dark"
-            fillClassName="bg-[#d4a368]"
+            fillClassName="bg-white/70"
           >
             View Resume
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/75 text-primary-dark">
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/25 text-white transition-colors group-hover:bg-white group-hover:text-primary-dark">
               <FiDownload size={16} />
             </span>
           </OriginButton>

@@ -6,6 +6,7 @@ import leaferImg from "../assets/projects-img/leafer.jpeg";
 import medstarImg from "../assets/projects-img/MedStar.jpeg";
 import sweetestImg from "../assets/projects-img/the-sweetest.png";
 import pizzaImg from "../assets/projects-img/Pizza-website.png";
+import CoverflowSlider from "c:/Users/HP/Downloads/CoverflowSlider";
 
 const allProjects = [
   {
@@ -124,13 +125,20 @@ function ProjectsIntro() {
         </div>
       </div>
 
-      <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        data-aos="fade-up"
-      >
-        {visibleProjects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
-        ))}
+      <div data-aos="fade-up">
+        {visibleProjects.length >= 3 ? (
+          <CoverflowSlider key={activeTab} background="var(--color-surface)">
+            {visibleProjects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
+          </CoverflowSlider>
+        ) : (
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {visibleProjects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
