@@ -6,7 +6,7 @@ import leaferImg from "../assets/projects-img/leafer.jpeg";
 import medstarImg from "../assets/projects-img/MedStar.jpeg";
 import sweetestImg from "../assets/projects-img/the-sweetest.png";
 import pizzaImg from "../assets/projects-img/Pizza-website.png";
-import CoverflowSlider from "c:/Users/HP/Downloads/CoverflowSlider";
+import CoverflowSlider from "./CoverflowSlider";
 
 const allProjects = [
   {
